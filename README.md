@@ -6,8 +6,6 @@
 
 2. Creamos el archivo "example.js" donde definimos nuestra función de JavaScript a invocar desde C#. Localizamos el archivo dentro de una carpeta "js" localizada en "wwwroot"
 
-// wwwroot/js/example.js
-
 ```javascript
 window.ShowSwal = function (type, message) {
     if (type == "success")
