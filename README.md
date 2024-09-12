@@ -1,6 +1,7 @@
 # CURSO: APRENDE BLAZOR
 
 # LECCIÓN 39: Interoperatibilidad con JavaScript (librería SweetAlert2)
+https://sweetalert2.github.io/
 
 1. Abrir la aplicación con Visual Studio 2022 o VSCode
 
