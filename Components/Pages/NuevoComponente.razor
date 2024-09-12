@@ -1,0 +1,23 @@
+﻿@page "/sweetalert2"
+@inject IJSRuntime JSRuntime
+
+<h3>SweetAlert2 Notification Example</h3>
+
+@* https://sweetalert2.github.io/ *@
+
+<button @onclick="ShowSuccessNotification">Show Success</button>
+<button @onclick="ShowErrorNotification">Show Error</button>
+
+@code {
+    private async Task ShowSuccessNotification()
+    {
+        // Call the JavaScript function to show a success message
+        await JSRuntime.InvokeVoidAsync("ShowSwal", "success", "Success Notification");
+    }
+
+    private async Task ShowErrorNotification()
+    {
+        // Call the JavaScript function to show an error message
+        await JSRuntime.InvokeVoidAsync("ShowSwal", "error", "Error Notification");
+    }
+}
